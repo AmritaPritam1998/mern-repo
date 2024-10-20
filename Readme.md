@@ -41,6 +41,7 @@ rest APIs--removing deleting the data with single APIs.
 -15.what are Middlewares?
 -16.using Middlewares in Express.
 -17.what is HTTP and other topics included?
+-18.HTTP(HYPERTEXT TRANSFER PROTOCOL)
 
 ## packages under nodemon
 
@@ -52,7 +53,12 @@ rest APIs--removing deleting the data with single APIs.
 -4.Modules:Node .js uses the commonjs module system to import and export code between files.
 
 ### HTTP ###
--1. HTTP (HYPERTEXT TRANSFER PROTOCOL)is the foundation of any data exchange on the web and a key concept when working with express.js,a web framework for node.js.in express you will often deal with requests and responses that conform to the HTTP protocol.
+-1. HTTP (HYPERTEXT TRANSFER PROTOCOL)is the 
+foundation of any data exchange on the web and a 
+key concept when working with express.js,a web 
+framework for node.js.in express you will often deal 
+with requests and responses that conform to the HTTP 
+protocol.
 
 -2.Http methods
 * GET:retrieve information.
@@ -60,6 +66,51 @@ rest APIs--removing deleting the data with single APIs.
 * put:update a resource.
 * delete:remove a resource.
 * patch:partially update a resource.
+
+## a view engine in nodejs allows you to render HTML
+  page dynamatically usinh template engines.it lets 
+  you insert server-side data into HTML templates 
+  before sending the final HTML to the client.Commonly
+  used view engines includes EJS(Embedded js),pug(formoly jade),and Handlebars.
+## <%= %>: used to insert a variable's value directly into the HTML.
+##  <% %>: used for control flow statements(e.g.,for each,if)
+
+## Benefits of using a view engine
+-1.Separation of Cocerns:Logic and presentation are separated.The server handles the logic,and EJS templates handle the UI.
+
+-2.Reusability: you can reuse parts of HTML by including partial templates,which reduces redundancy.
+
+-3.Data Binding:Dynamic data canbe inserted into HTML pages,making it easier to create dynamic websites.
+
+#### MongoDb
+
+###### Mongodb is a popular nosql database designed for handling large volumes of unstructured data.Unlike traditional SQL databases that use tables and rows,MongoDB stores data in flexible,JSON-like documents,making it ideal for modern web applications where data structures can change over time.
+
+
+## MongoDb stores data as documents in BSON(Binary JSON)format.
+## each document is a key-value pair structure similar to JSON.
+## the _id field is unique for each document and is automatically creatted by MongoDB if not provided.
+
+
+{
+    "_id":"12345",
+    "name":"john Doe",
+    "email":"john@example.com",
+    "age":30,
+}
+
+# Documents are stored in collection.A collection is agroup of MongoDb documents,similar to a table in relational databases.
+# collections do not enforce a scheme ,allowing documents with different structures to be stored together.
+
+# a mongoDb database is a container for collection,similar to databases in SQL.Multiple databases can exist in a MongoDb instance.
+
+# MongoDb is schema-less,meaning there is no predefined structure,and documents in the same colection can have different fields and data types.
+
+# create:insert documents into a collection.
+# Read:Retrieve documents from a collection using queries.
+# Update:Modify existing documents.
+# Delete:Remove documents from a collection.
+
 
 
 

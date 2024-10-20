@@ -14,7 +14,7 @@ app.put("/update/:id",(req,res)=>{
 });
 app.delete("/delete/:id",(req,res)=>{
     const {id}=req.params;
-    res.send(`put request to update resource with Id:${id}`);
+    res.send(`put request to delete resource with Id:${id}`);
 
 });
 app.listen(3000,()=>{
